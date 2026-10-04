@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odoo Modules Explained: A Plain-English Overview</title>
+<meta name="description" content="A plain-English tour of Odoo's main apps — Sales, CRM, Inventory, Manufacturing, Accounting, HR, Website — and how they connect to each other.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://odoo-companies-hub.github.io/odoo_companies/odoo-modules-explained.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="index.html">Odoo Partners Directory</a>
+  <div class="links">
+    <a href="index.html">Directory</a>
+    <a href="guides.html">Guides</a>
+    <a href="odoo-implementation-cost.html">Implementation Cost</a>
+    <a href="odoo-vs-alternatives.html">Odoo vs Alternatives</a>
+  </div>
+</nav>
+
+<header class="article-hero">
+  <div class="wrap">
+    <span class="eyebrow">Guide</span>
+    <h1>Odoo Modules Explained: A Plain-English Overview</h1>
+    <p>Odoo is organized into "apps" that share one database. Here's what the main ones actually do, in plain terms.</p>
+  </div>
+</header>
+
+<article class="post">
+  <p>Odoo's biggest structural idea is that every app — Sales, Inventory, Accounting, and so on — writes to the
+  same underlying database. A sales order in the Sales app automatically becomes a delivery in Inventory and an
+  invoice in Accounting, without re-entering data. Here's a plain-English tour of the apps most businesses start with.</p>
+
+  <h2>Core business apps</h2>
+
+  <h3>Sales &amp; CRM</h3>
+  <p>CRM tracks leads and opportunities through a pipeline; Sales turns a won opportunity into a quote, then a
+  confirmed sales order. These two are usually the first apps a business turns on.</p>
+
+  <h3>Inventory</h3>
+  <p>Tracks stock across one or multiple warehouses, handles receiving and shipping, and supports advanced routing
+  (e.g. pick-pack-ship, dropshipping, cross-docking) for businesses that need it. Deeply linked to Sales and
+  Manufacturing.</p>
+
+  <h3>Manufacturing (MRP)</h3>
+  <p>Bills of materials, work orders, and production scheduling. Relevant only to businesses that actually make
+  products rather than just buy and resell them.</p>
+
+  <h3>Accounting / Invoicing</h3>
+  <p>Handles invoicing, vendor bills, bank reconciliation, and financial reporting. In many countries Odoo ships
+  localized versions (tax rules, e-invoicing formats) — worth confirming your country's localization is mature
+  before committing, which is one reason to pick a partner with local experience (see the
+  <a href="index.html">partner directory</a> filtered by country).</p>
+
+  <h3>Purchase</h3>
+  <p>Manages vendor quotations, purchase orders, and incoming goods — the mirror image of Sales, from the buying side.</p>
+
+  <h2>Operations and people apps</h2>
+  <ul>
+    <li><strong>HR / Employees</strong> — organizational structure, time off, appraisals</li>
+    <li><strong>Payroll</strong> — country-specific, so maturity varies a lot by region</li>
+    <li><strong>Project</strong> — task and project tracking, often used alongside Timesheets for billable work</li>
+    <li><strong>Helpdesk</strong> — support ticket management</li>
+  </ul>
+
+  <h2>Customer-facing apps</h2>
+  <ul>
+    <li><strong>Website</strong> — a built-in CMS/website builder</li>
+    <li><strong>eCommerce</strong> — an online store that shares the same product and inventory data as the rest
+    of Odoo, so stock levels and orders stay in sync automatically</li>
+    <li><strong>Point of Sale (POS)</strong> — in-person retail checkout, including offline support for
+    unreliable internet connections</li>
+  </ul>
+
+  <h2>How to think about scope</h2>
+  <p>You don't need to implement every app on day one. A very common pattern is: start with Sales + Inventory +
+  Accounting (sometimes called the "quote-to-cash" core), get that running well, then add Manufacturing, HR, or
+  Website in a later phase once the team is comfortable with the basics.</p>
+
+  <div class="callout">
+    <strong>Practical tip:</strong> More apps means more configuration and training, which means more cost and
+    more risk of overwhelming your team. Ask a prospective partner to recommend a minimal phase-one scope rather
+    than everything at once — a good partner will push back on over-scoping, not encourage it.
+  </div>
+
+  <div class="cta-box">
+    <p><strong>Need help scoping your implementation?</strong> Browse 464 real Odoo partners by country and tier.</p>
+    <a class="btn" href="index.html">Browse the Directory →</a>
+  </div>
+</article>
+
+<div class="related">
+  <h2>Related guides</h2>
+  <ul>
+    <li><a href="odoo-implementation-cost.html">Odoo Implementation Cost</a></li>
+    <li><a href="odoo-community-vs-enterprise.html">Odoo Community vs Enterprise</a></li>
+    <li><a href="odoo-vs-alternatives.html">Odoo vs SAP vs Zoho vs QuickBooks</a></li>
+  </ul>
+</div>
+
+<footer>
+  <p>This is an independent, unofficial guide — not affiliated with, endorsed by, or sponsored by Odoo S.A.
+  "Odoo" is a trademark of Odoo S.A. For the full, current list of apps, see
+  <a href="https://www.odoo.com/app/all" target="_blank" rel="noopener">odoo.com/app/all</a>.</p>
+</footer>
+
+</body>
+</html>

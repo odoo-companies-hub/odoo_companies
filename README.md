@@ -19,10 +19,14 @@ A known Odoo-wide generic support number is filtered out so it's never
 shown as if it were a specific company's own contact.
 
 ## Files
-- `index.html` — page structure, SEO meta tags, ad slot placeholders
+- `index.html` — directory page structure, SEO meta tags, ad slot placeholders
+- `styles.css` — shared styling for every page
 - `script.js` — search/filter logic (pure client-side, no backend needed)
 - `data.js` — the company dataset
-- `robots.txt`, `sitemap.xml` — SEO basics (update the placeholder URL once you have a domain)
+- `guides.html` + 5 article pages (`odoo-implementation-cost.html`, `odoo-vs-alternatives.html`,
+  `odoo-modules-explained.html`, `odoo-community-vs-enterprise.html`, `how-to-choose-odoo-partner.html`) —
+  original written content targeting common Odoo-related searches, to bring in traffic beyond the directory itself
+- `robots.txt`, `sitemap.xml` — SEO basics, already pointed at the live site
 
 ## 1. Test it locally
 Just open `index.html` in a browser, or run a tiny local server:

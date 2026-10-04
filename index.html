@@ -16,124 +16,22 @@
 <!-- TODO: Replace with your own AdSense publisher ID once approved -->
 <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
 
-<style>
-  :root{
-    --bg:#f5f3f7; --surface:#ffffff; --border:#e4e0ea; --text:#201a2b; --muted:#6c6478;
-    --accent:#714b67; --accent2:#9b6b92; --accent-ink:#ffffff;
-    --gold:#b8862f; --silver:#78818f; --ready:#4a74ad;
-    --radius:12px; --shadow:0 1px 2px rgba(32,26,43,.04), 0 8px 24px -12px rgba(32,26,43,.12);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#15131a; --surface:#1e1b26; --border:#312c3b; --text:#eeebf2; --muted:#a79fb3;
-      --shadow:0 1px 2px rgba(0,0,0,.2), 0 8px 24px -12px rgba(0,0,0,.5); }
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-  a{color:var(--accent)}
-
-  .hero{
-    background:linear-gradient(160deg,var(--accent) 0%,var(--accent2) 100%);
-    color:#fff;padding:3.2rem 1.5rem 3.6rem;text-align:center;
-  }
-  .hero .eyebrow{
-    display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:700;letter-spacing:.06em;
-    text-transform:uppercase;background:rgba(255,255,255,.15);padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem;
-  }
-  .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .7rem;letter-spacing:-.01em}
-  .hero p{max-width:620px;margin:0 auto;color:rgba(255,255,255,.88);font-size:1.02rem}
-  .stats-row{
-    max-width:760px;margin:2rem auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;
-  }
-  .stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:.9rem .5rem}
-  .stat b{display:block;font-size:1.5rem;line-height:1.2}
-  .stat span{font-size:.78rem;color:rgba(255,255,255,.8)}
-
-  .ad-slot{max-width:900px;margin:1.5rem auto;min-height:0;text-align:center}
-
-  .controls-wrap{position:sticky;top:0;z-index:10;background:var(--bg);padding-top:1.2rem;padding-bottom:.6rem;border-bottom:1px solid transparent}
-  .controls-wrap.stuck{border-bottom-color:var(--border);box-shadow:var(--shadow)}
-  .controls{max-width:1100px;margin:0 auto;padding:0 1.5rem;display:flex;gap:.75rem;flex-wrap:wrap}
-  .controls input, .controls select{
-    padding:.7rem 1rem;border:1px solid var(--border);border-radius:var(--radius);
-    background:var(--surface);color:var(--text);font-size:.95rem;
-  }
-  .controls input{flex:1;min-width:200px}
-  .stats{max-width:1100px;margin:.65rem auto 0;padding:0 1.5rem;color:var(--muted);font-size:.85rem}
-
-  main{max-width:1100px;margin:0 auto;padding:1rem 1.5rem 1rem}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem;margin-top:1rem}
-  .card{
-    background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--border);border-radius:var(--radius);
-    padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.55rem;box-shadow:var(--shadow);
-    transition:transform .12s ease, box-shadow .12s ease;
-  }
-  .card:hover{transform:translateY(-2px)}
-  .card.Gold{border-left-color:var(--gold)}
-  .card.Silver{border-left-color:var(--silver)}
-  .card.Ready{border-left-color:var(--ready)}
-  .card h3{margin:0;font-size:1.02rem;line-height:1.3}
-  .card .meta{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;font-size:.78rem;color:var(--muted)}
-  .badge{padding:.15rem .6rem;border-radius:999px;font-weight:700;font-size:.72rem;color:#fff;letter-spacing:.01em}
-  .badge.Gold{background:var(--gold)}
-  .badge.Silver{background:var(--silver)}
-  .badge.Ready{background:var(--ready)}
-  .country-chip{padding:.15rem .55rem;border-radius:999px;background:var(--bg);border:1px solid var(--border)}
-  .card .addr{font-size:.78rem;color:var(--muted);line-height:1.4}
-  .card .contact{display:flex;flex-direction:column;gap:.3rem}
-  .card .contact a{
-    font-size:.82rem;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.4rem;
-    overflow-wrap:anywhere;
-  }
-  .card .contact a:hover{color:var(--accent);text-decoration:underline}
-  .card .no-contact{margin:0;font-size:.78rem;color:var(--muted);font-style:italic}
-  .card a.profile-link{
-    margin-top:auto;font-size:.85rem;color:var(--accent);text-decoration:none;font-weight:700;
-    display:inline-flex;align-items:center;gap:.25rem;
-  }
-  .card a.profile-link:hover{text-decoration:underline}
-  .empty{text-align:center;color:var(--muted);padding:3rem 1rem}
-  .pager{display:flex;justify-content:center;gap:.5rem;margin:1.6rem 0 .5rem}
-  .pager button{
-    padding:.5rem 1.1rem;border-radius:999px;border:1px solid var(--border);background:var(--surface);
-    color:var(--text);cursor:pointer;font-size:.85rem;font-weight:600;
-  }
-  .pager button:disabled{opacity:.4;cursor:default}
-
-  section.content{max-width:1100px;margin:2.5rem auto 0;padding:0 1.5rem}
-  section.content h2{font-size:1.35rem;margin-bottom:.25rem;letter-spacing:-.01em}
-  section.content > p.intro{color:var(--muted);margin-top:0;max-width:720px}
-
-  .guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-top:1rem}
-  .guide-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.2rem;box-shadow:var(--shadow)}
-  .guide-card h3{margin:0 0 .4rem;font-size:1rem;display:flex;align-items:center;gap:.4rem}
-  .guide-card p{margin:0;font-size:.85rem;color:var(--muted);line-height:1.55}
-  .guide-card button{
-    margin-top:.7rem;font-size:.78rem;padding:.35rem .8rem;border-radius:999px;border:1px solid var(--border);
-    background:var(--bg);color:var(--text);cursor:pointer;font-weight:600;
-  }
-  .guide-card button:hover{border-color:var(--accent);color:var(--accent)}
-
-  .tier-explainer{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
-  .tier-explainer .t{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.2rem;box-shadow:var(--shadow)}
-  .tier-explainer .t h3{margin:0 0 .4rem;font-size:.95rem}
-  .tier-explainer .t p{margin:0;font-size:.85rem;color:var(--muted);line-height:1.55}
-
-  .faq{margin-top:1rem}
-  .faq details{
-    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
-    padding:.9rem 1.1rem;margin-bottom:.6rem;box-shadow:var(--shadow);
-  }
-  .faq summary{cursor:pointer;font-weight:600;font-size:.95rem}
-  .faq p{margin:.6rem 0 0;color:var(--muted);font-size:.88rem;line-height:1.6}
-
-  footer{max-width:1100px;margin:2.5rem auto 0;padding:1.5rem;color:var(--muted);font-size:.82rem;line-height:1.6;border-top:1px solid var(--border)}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<nav class="site-nav">
+  <a class="brand" href="index.html">Odoo Partners Directory</a>
+  <div class="links">
+    <a href="index.html">Directory</a>
+    <a href="guides.html">Guides</a>
+    <a href="odoo-implementation-cost.html">Implementation Cost</a>
+    <a href="odoo-vs-alternatives.html">Odoo vs Alternatives</a>
+  </div>
+</nav>
+
 <header class="hero">
-  <span class="eyebrow">297 real partners · 16 countries</span>
+  <span class="eyebrow">464 real partners · 16 countries</span>
   <h1>Odoo Partners Directory</h1>
   <p>A searchable directory of official Odoo implementation partner companies — browse by country and certification tier. Every listing links directly to that company's official Odoo partner profile.</p>
   <div class="stats-row" id="hero-stats"></div>
@@ -206,6 +104,43 @@
       <summary>Does Odoo partner tier affect pricing?</summary>
       <p>Not directly — tier reflects experience and scale, not a fixed rate card. Gold partners are often (not always) priced higher given demand and seniority, but a well-matched Silver or Ready partner can be more cost-effective for a straightforward implementation.</p>
     </details>
+  </div>
+</section>
+
+<section class="content" id="guides-section">
+  <h2>Odoo Guides</h2>
+  <p class="intro">Independent guides covering the questions people actually search before starting an Odoo project.</p>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <a class="card-link" href="odoo-implementation-cost.html">
+        <h3>💰 Odoo Implementation Cost</h3>
+        <p>What actually drives the price of an Odoo project.</p>
+      </a>
+    </div>
+    <div class="guide-card">
+      <a class="card-link" href="odoo-vs-alternatives.html">
+        <h3>⚖️ Odoo vs SAP vs Zoho vs QuickBooks</h3>
+        <p>How Odoo compares to the ERPs it's most often cross-shopped against.</p>
+      </a>
+    </div>
+    <div class="guide-card">
+      <a class="card-link" href="odoo-modules-explained.html">
+        <h3>🧩 Odoo Modules Explained</h3>
+        <p>A plain-English tour of Odoo's main apps.</p>
+      </a>
+    </div>
+    <div class="guide-card">
+      <a class="card-link" href="odoo-community-vs-enterprise.html">
+        <h3>🆓 Community vs Enterprise</h3>
+        <p>The real differences between Odoo's free and paid editions.</p>
+      </a>
+    </div>
+    <div class="guide-card">
+      <a class="card-link" href="how-to-choose-odoo-partner.html">
+        <h3>🤝 How to Choose an Odoo Partner</h3>
+        <p>A practical checklist before you sign a contract.</p>
+      </a>
+    </div>
   </div>
 </section>
 

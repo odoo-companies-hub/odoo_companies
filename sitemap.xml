@@ -5,4 +5,34 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://odoo-companies-hub.github.io/odoo_companies/guides.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odoo-companies-hub.github.io/odoo_companies/odoo-implementation-cost.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odoo-companies-hub.github.io/odoo_companies/odoo-vs-alternatives.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odoo-companies-hub.github.io/odoo_companies/odoo-modules-explained.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odoo-companies-hub.github.io/odoo_companies/odoo-community-vs-enterprise.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odoo-companies-hub.github.io/odoo_companies/how-to-choose-odoo-partner.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
