@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Odoo Partner — Free Matching Tool</title>
+<meta name="description" content="Answer 3 quick questions about your industry, project size, and budget tier, and this free tool ranks the best-fit Odoo implementation partners from real project data — no form to fill, no sales calls.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://odoo-companies-hub.github.io/odoo_companies/find-a-partner.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:site_name" content="Odoo Partners Directory">
+<meta property="og:title" content="Find Your Odoo Partner — Free Matching Tool">
+<meta property="og:description" content="Answer 3 quick questions and get ranked Odoo partner matches based on real project data — industry fit, project size, and tier.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://odoo-companies-hub.github.io/odoo_companies/find-a-partner.html">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Find Your Odoo Partner — Free Matching Tool">
+<meta name="twitter:description" content="Answer 3 quick questions and get ranked Odoo partner matches based on real project data.">
+
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3038988631598049" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://odoo-companies-hub.github.io/odoo_companies/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Find a Partner", "item": "https://odoo-companies-hub.github.io/odoo_companies/find-a-partner.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Odoo Partner Finder",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "description": "A free tool that matches businesses to Odoo implementation partners based on industry, project size, and certification tier, using real per-partner project data.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "url": "https://odoo-companies-hub.github.io/odoo_companies/find-a-partner.html"
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="index.html">Odoo Partners Directory</a>
+  <div class="links">
+    <a href="index.html">Directory</a>
+    <a href="find-a-partner.html">Find a Partner</a>
+    <a href="guides.html">Guides</a>
+    <a href="odoo-implementation-cost.html">Implementation Cost</a>
+    <a href="odoo-vs-alternatives.html">Odoo vs Alternatives</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="article-hero">
+  <div class="wrap">
+    <span class="eyebrow">Free tool</span>
+    <h1>Find Your Odoo Partner</h1>
+    <p>Answer 3 quick questions and we'll rank the best-fit partners from our 464-company dataset — based on
+    real project counts, industry mix, and client retention from each company's own Odoo profile. No signup,
+    no sales calls, no email required.</p>
+  </div>
+</header>
+
+<main class="quiz-wrap">
+  <div class="quiz-card">
+    <div class="quiz-field">
+      <label for="q-industry">Your industry</label>
+      <select id="q-industry"><option value="">Any industry</option></select>
+    </div>
+    <div class="quiz-field">
+      <label for="q-size">Typical project size (users on the system)</label>
+      <select id="q-size">
+        <option value="">Any size</option>
+        <option value="small">Small — under 20 users</option>
+        <option value="medium">Mid-size — 20 to 100 users</option>
+        <option value="large">Large — 100+ users</option>
+      </select>
+    </div>
+    <div class="quiz-field">
+      <label for="q-tier">Preferred partner tier</label>
+      <select id="q-tier">
+        <option value="">Any tier</option>
+        <option value="Gold">Gold — most experienced</option>
+        <option value="Silver">Silver — mid-size projects</option>
+        <option value="Ready">Ready — newer, lower-cost</option>
+      </select>
+    </div>
+    <div class="quiz-field">
+      <label for="q-country">Preferred country</label>
+      <select id="q-country"><option value="">Any country</option></select>
+    </div>
+    <button type="button" id="q-submit">Find My Matches →</button>
+  </div>
+
+  <div id="match-results" class="match-results" hidden>
+    <h2 id="match-heading">Your top matches</h2>
+    <p class="match-sub" id="match-sub"></p>
+    <div class="grid" id="match-grid"></div>
+  </div>
+</main>
+
+<section class="content">
+  <h2>How this works</h2>
+  <p class="intro">This tool scores every partner with published project data on three signals pulled straight
+  from that company's own official Odoo profile: how many of their past projects were in your industry, whether
+  their typical project size matches yours, and their client retention rate. It's a starting shortlist, not a
+  guarantee — always verify fit with a direct conversation and references before signing anything. See the full
+  <a href="how-to-choose-odoo-partner.html">partner evaluation checklist</a> for what to ask next.</p>
+</section>
+
+<footer>
+  <p><strong>About this data:</strong> Match scores are computed from real per-partner statistics (project counts
+  by industry, typical project size, customer retention) published on each company's own official Odoo partner
+  profile — nothing is invented. This is an independent, unofficial tool and is not affiliated with, endorsed
+  by, or sponsored by Odoo S.A. "Odoo" is a trademark of Odoo S.A.</p>
+  <p><a href="about.html">About</a> · <a href="contact.html">Contact</a></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="partner-stats.js"></script>
+<script src="match.js"></script>
+</body>
+</html>
