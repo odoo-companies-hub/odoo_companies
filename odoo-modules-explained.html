@@ -55,7 +55,7 @@
   "headline": "Odoo Modules Explained: A Plain-English Overview",
   "description": "A plain-English tour of Odoo's main apps — Sales, CRM, Inventory, Manufacturing, Accounting, HR, Website — and how they connect to each other.",
   "datePublished": "2026-10-06",
-  "dateModified": "2026-10-07",
+  "dateModified": "2026-10-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://odoo-companies-hub.github.io/odoo_companies/odoo-modules-explained.html"
@@ -74,6 +74,34 @@
       "url": "https://odoo-companies-hub.github.io/odoo_companies/favicon.svg"
     }
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many Odoo modules are there in total?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Odoo ships dozens of apps, and the exact count changes with each yearly release as new ones are added. Most businesses only ever use a handful of them." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Odoo modules are free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every app is available in the free, self-hosted Community edition in some form, though a number of apps require the paid Enterprise edition for their full functionality." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all Odoo modules work together automatically?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Core apps like Sales, Inventory, Accounting, Purchase, and Manufacturing are tightly integrated out of the box because they share one database. Some specialized apps need light configuration to connect cleanly to your workflow." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the minimum set of modules for a small business?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most small businesses start with Sales, Inventory, and Accounting, then add CRM if they have an active sales pipeline, and Purchase if they buy stock from vendors." }
+    }
+  ]
 }
 </script>
 </head>
@@ -147,6 +175,30 @@
     unreliable internet connections</li>
   </ul>
 
+  <h2>Marketing and growth apps</h2>
+  <ul>
+    <li><strong>Email Marketing</strong> — campaign building and sending, with results tracked against the same
+    contact and sales records as the rest of Odoo</li>
+    <li><strong>Marketing Automation</strong> — trigger-based workflows (e.g. "send this sequence after a lead
+    goes quiet for 14 days")</li>
+    <li><strong>Events</strong> — ticketing and registration for in-person or online events</li>
+    <li><strong>Surveys</strong> — feedback forms linked to CRM and Project records</li>
+  </ul>
+
+  <h2>Subscriptions, field service, and other specialized apps</h2>
+  <ul>
+    <li><strong>Subscriptions</strong> — recurring billing and contract management, useful for SaaS or membership
+    businesses</li>
+    <li><strong>Field Service</strong> — scheduling and dispatching technicians, with mobile checklists and
+    on-site invoicing</li>
+    <li><strong>Sign</strong> — e-signature on quotes, contracts, and HR documents without a third-party tool</li>
+    <li><strong>Documents</strong> — centralized file storage with workflow rules (e.g. auto-file vendor bills)</li>
+    <li><strong>Knowledge</strong> — an internal wiki for SOPs and team documentation</li>
+    <li><strong>Appointments</strong> — online booking pages synced to staff calendars</li>
+    <li><strong>Studio</strong> — a low-code tool for building custom fields, views, and automations without
+    writing Python — often how partners deliver light customization quickly</li>
+  </ul>
+
   <h2>How to think about scope</h2>
   <p>You don't need to implement every app on day one. A very common pattern is: start with Sales + Inventory +
   Accounting (sometimes called the "quote-to-cash" core), get that running well, then add Manufacturing, HR, or
@@ -157,6 +209,25 @@
     more risk of overwhelming your team. Ask a prospective partner to recommend a minimal phase-one scope rather
     than everything at once — a good partner will push back on over-scoping, not encourage it.
   </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>How many Odoo modules are there in total?</h3>
+  <p>Odoo ships dozens of apps, and the exact count changes with each yearly release as new ones are added. For
+  the full, current list see <a href="https://www.odoo.com/app/all" target="_blank" rel="noopener">odoo.com/app/all</a>
+  — most businesses only ever use a handful of them.</p>
+  <h3>Which Odoo modules are free?</h3>
+  <p>Every app is available in the free, self-hosted Community edition in some form, though a number of apps
+  (advanced Manufacturing features, multi-company Accounting, Subscriptions, Field Service, and others) require
+  the paid Enterprise edition for their full functionality. Always check current editions on
+  <a href="https://www.odoo.com/pricing" target="_blank" rel="noopener">odoo.com/pricing</a> before assuming.</p>
+  <h3>Do all Odoo modules work together automatically?</h3>
+  <p>Core apps (Sales, Inventory, Accounting, Purchase, Manufacturing) are tightly integrated out of the box
+  because they share one database. Some specialized apps need light configuration to connect cleanly to your
+  specific workflow — this is typically part of what an implementation partner scopes and sets up.</p>
+  <h3>What's the minimum set of modules for a small business?</h3>
+  <p>Most small businesses start with Sales, Inventory, and Accounting (sometimes called the "quote-to-cash"
+  core), then add CRM if they have an active sales pipeline, and Purchase if they buy stock from vendors. See
+  <a href="odoo-implementation-cost.html">Odoo Implementation Cost</a> for how scope affects price.</p>
 
   <div class="cta-box">
     <p><strong>Need help scoping your implementation?</strong> Browse 464 real Odoo partners by country and tier.</p>
